@@ -1,0 +1,20 @@
+name: BetterStresstestbots
+version: 1.0.0
+main: me.micahcode.betterStresstestbots.StressTestPlugin
+api-version: '1.21'
+description: Server-side stress testing with fake bot players
+
+commands:
+  stress:
+    description: Control stress test bots
+    usage: /stress <start|stop|count|speed|radius|mode|tp|status> [value]
+    permission: stresstestbots.use
+  start:
+    description: Quick-start bots
+    usage: /start [count]
+    permission: stresstestbots.use
+
+permissions:
+  stresstestbots.use:
+    description: Use stress test commands
+    default: op
